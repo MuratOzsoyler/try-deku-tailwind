@@ -7,6 +7,9 @@ package:
     - effect
     - hyrule
     - prelude
+    - web-cssom
+    - web-cssom-view
+    - web-resize-observer
   name: try-deku-tailwind
   test:
     dependencies: []

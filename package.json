@@ -5,12 +5,12 @@
   "main": "index.js",
   "module": "true",
   "scripts": {
-    "build": "npm run build:purs && npm run build:esbuild && npm run build:tailwind",
+    "build": "npm run build:purs && npm run build:esbuild",
     "build:purs": "npx spago build",
-    "build:esbuild": "node ./esbuild.build.mjs",
+    "build:esbuild": "node ./esbuild.build.js",
     "build:tailwind": "npx tailwindcss -i ./src/style.css -o ./dist/style.css",
-    "dev": "npm run build:purs && npm run build:tailwind && npm run dev:esbuild",
-    "dev:esbuild": "node ./esbuild.serve.mjs",
+    "dev": "npm run build:purs && npm run dev:esbuild",
+    "dev:esbuild": "node ./esbuild.serve.js",
     "dev:tailwind": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +19,10 @@
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
     "esbuild": "0.19.5",
+    "esbuild-style-plugin": "^1.6.3",
+    "postcss": "^8.4.31",
     "purescript": "^0.15.12",
     "spago": "^0.93.18",
     "tailwindcss": "^3.3.5"
