@@ -31,68 +31,68 @@ workspace:
       dependencies:
         - hyrule
     deku-core:
-      path: ../../packages/purescript-deku/deku-core
-      # subdir: deku-core
-      # git: "https://github.com/mikesol/purescript-deku.git"
-      # ref: "95e30da"
-      # # version: "main"
-      # dependencies:
-      #   - aff
-      #   - arrays
-      #   - bolson
-      #   - catenable-lists
-      #   - control
-      #   - effect
-      #   - either
-      #   - fast-vect
-      #   - filterable
-      #   - foldable-traversable
-      #   - foreign-object
-      #   - free
-      #   - hyrule
-      #   - maybe
-      #   - newtype
-      #   - ordered-collections
-      #   - prelude
-      #   - profunctor
-      #   - quickcheck
-      #   - record
-      #   - safe-coerce
-      #   - st
-      #   - strings
-      #   - stringutils
-      #   - transformers
-      #   - tuples
-      #   - unsafe-coerce
-      #   - web-dom
-      #   - web-events
-      #   - web-html
-      #   - web-uievents
+      # path: ../../packages/purescript-deku/deku-core
+      subdir: deku-core
+      git: "https://github.com/mikesol/purescript-deku.git"
+      ref: "95e30da"
+      # version: "main"
+      dependencies:
+        - aff
+        - arrays
+        - bolson
+        - catenable-lists
+        - control
+        - effect
+        - either
+        - fast-vect
+        - filterable
+        - foldable-traversable
+        - foreign-object
+        - free
+        - hyrule
+        - maybe
+        - newtype
+        - ordered-collections
+        - prelude
+        - profunctor
+        - quickcheck
+        - record
+        - safe-coerce
+        - st
+        - strings
+        - stringutils
+        - transformers
+        - tuples
+        - unsafe-coerce
+        - web-dom
+        - web-events
+        - web-html
+        - web-uievents
     deku-dom:
-      path: ../../packages/purescript-deku/deku-dom
-      # subdir: deku-dom
-      # git: "https://github.com/mikesol/purescript-deku.git"
-      # ref: "95e30da"
-      # # version: "main"
-      # dependencies:
-      #   - deku-core
-      #   - hyrule
-      #   - web-html
-      #   - web-uievents
-      #   - web-pointerevents
-      #   - web-touchevents
-    deku-css:
-      path: ../../packages/purescript-deku/deku-css
+      # path: ../../packages/purescript-deku/deku-dom
+      subdir: deku-dom
+      git: "https://github.com/mikesol/purescript-deku.git"
+      ref: "95e30da"
+      # version: "main"
+      dependencies:
+        - deku-core
+        - hyrule
+        - web-html
+        - web-uievents
+        - web-pointerevents
+        - web-touchevents
+    # deku-css:
+    #   path: ../../packages/purescript-deku/deku-css
     deku:
-      path: ../../packages/purescript-deku/deku
-      # subdir: deku
-      # git: "https://github.com/mikesol/purescript-deku.git"
-      # ref: "95e30da"
-      # # version: "main"
-      # dependencies:
-      #   - deku-core
-      #   # - deku-css
-      #   - deku-dom
+      # path: ../../packages/purescript-deku/deku
+      subdir: deku
+      git: "https://github.com/mikesol/purescript-deku.git"
+      ref: "95e30da"
+      # version: "main"
+      dependencies:
+        - deku-core
+        # - deku-css
+        - deku-dom
 
   package_set:
     registry: 45.1.0
