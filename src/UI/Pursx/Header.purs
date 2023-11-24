@@ -20,19 +20,19 @@ header =
                                      lg:p-0 lg:flex lg:flex-row lg:border-none lg:items-stretch lg:space-x-3 lg:static" ~menuAttrs~>
                 <li class="flex">
                     <a rel="noopener noreferrer" href="#"
-                        class="flex items-center px-4 -mb-1 border-b-2 border-transparent" ~link1Attrs~>Link 1</a>
+                        class="flex items-center px-4 -mb-1 border-b-2 border-transparent" ~link1Attrs~>Çekler</a>
                 </li>
                 <li class="flex">
                     <a rel="noopener noreferrer" href="#"
-                        class="flex items-center px-4 -mb-1 border-b-2 border-transparent text-violet-400 border-violet-400">Link 2</a>
+                        class="flex items-center px-4 -mb-1 border-b-2 border-transparent text-violet-400 border-violet-400">Lehdarlar</a>
                 </li>
                 <li class="flex">
                     <a rel="noopener noreferrer" href="#"
-                        class="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link 3</a>
+                        class="flex items-center px-4 -mb-1 border-b-2 border-transparent">Ayarlar</a>
                 </li>
                 <li class="flex">
                     <a rel="noopener noreferrer" href="#"
-                        class="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link 4</a>
+                        class="flex items-center px-4 -mb-1 border-b-2 border-transparent">Yardım</a>
                 </li>
             </ul>
             <button id="menu-btn" class="p-4 lg:hidden" ~menuBtnAttrs~>

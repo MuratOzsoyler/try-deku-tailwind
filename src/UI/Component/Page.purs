@@ -6,10 +6,11 @@ import Common.Env (Env)
 import Deku.Core (Nut, NutWith, fixed)
 import UI.Component.Header as Component
 
-page :: Nut -> NutWith Env
-page contents = do
-  header <- Component.header
+page :: NutWith Env -> NutWith Env -> NutWith Env
+page header contents = do
+  hdr <- header
+  cnt <- contents
   pure $ fixed
-    [ header
-    , contents
+    [ hdr
+    , cnt
     ]

@@ -34,6 +34,7 @@ import FRP.Poll as Poll
 import Type.Proxy (Proxy(..))
 import UI.Component.Header as Component
 import UI.Component.Page as Component
+import UI.Component.Settings (settings)
 import UI.Pursx.Header as Pursx
 import Web.CSSOMView.MediaQueryList as CSSOMView.MQL
 import Web.CSSOMView.Window as CSSOMView
@@ -77,4 +78,5 @@ main = do
     Console.log $ "new treshold=" <> show t
     pushInTreshold t
   WebEvent.addEventListener mediaChangeEvtType mediaChangeHandler false $ CSSOMView.MQL.toEventTarget mql
-  runInBody $ Component.page (fixed []) { inTreshold }
+  let env = { inTreshold }
+  runInBody $ Component.page (settings env) env
